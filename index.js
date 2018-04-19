@@ -5,11 +5,6 @@ const CsvReadableStream = require("csv-reader");
 const verifier = require("email-verify");
 
 let filePath;
-const Json2csvParser = require("json2csv").Parser;
-const fields = ["email", "success"];
-const opts = { fields };
-const results = [];
-
 if (process.argv[2]) {
   filePath = process.argv[2];
 } else {
